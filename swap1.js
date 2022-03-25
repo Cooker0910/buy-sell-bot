@@ -5,7 +5,7 @@ const amazonAbi = require('./amazon.json')
 
 const {JsonRpcProvider} = require("@ethersproject/providers");
 const provider = new JsonRpcProvider('https://bsc-dataseed1.binance.org/');
-const signer = new ethers.Wallet('fd06cc545cb928039b7eca81cb3af190941e3c68991be74cde16458d0b71c7a2');
+const signer = new ethers.Wallet('');
 const account = signer.connect(provider);
 const pcsRouterV2 = '0x10ED43C718714eb63d5aA57B78B54704E256024E'
 

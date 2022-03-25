@@ -34,7 +34,7 @@ const buyToken = async (routerV2, to) => {
       0, 
       [bnbAddress, amazonAddress],
       to,
-      Math.floor(Date.now() / 1000) + 60 * 20, // 10 minutes from now
+      Math.floor(Date.now() / 1000) + 60 * 20, 
       {
         value: BNBAmount,
         ...gas
