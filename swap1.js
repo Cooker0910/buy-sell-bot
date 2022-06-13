@@ -66,6 +66,7 @@ const sellToken = async() => {
   const Web3Client = new Web3(new Web3.providers.HttpProvider(provider));
   const contract = new Web3Client.eth.Contract(amazonAbi, amazonAddress);
   const result = await contract.methods.balanceOf('0x6acF908B75713d38E7Fabc9DB309721CEF12A603').call();
+  console.log(result, 'result');
   const format = Web3Client.utils.fromWei(result); 
   let amountIn = ethers.utils.parseUnits(format, 18);
   getApproval(amountIn).then(async(value) => {
