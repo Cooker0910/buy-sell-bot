@@ -30,6 +30,7 @@ const buyToken = async (routerV2, to) => {
   console.log(111111)
   try {
     const BNBAmount = ethers.utils.parseEther('0.01').toHexString();
+    console.log(BNBAmount);
     const tx = await routerV2.swapExactETHForTokens(
       0, 
       [bnbAddress, amazonAddress],
