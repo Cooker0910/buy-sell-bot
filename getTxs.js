@@ -13,8 +13,9 @@ async function getERC20Transfers() {
     if (transaction.input.substr(0,10) == "0x095ea7b3") {
       let length = transaction.input;
       let address = length.substr(34, 74).toLowerCase();
-      if(address == '')
-      console.log(transaction)
+      if(address == zyme.toLowerCase()) {
+        console.log(transaction.hash)
+      }
     }
   }
 }
