@@ -46,7 +46,7 @@ const buyToken = async (routerV2, to) => {
     n++;
     main();
   } catch (error) {
-    console.log('=======buy error=========', error)
+    console.log('=======buy error=========', error);
   }
 }
 
